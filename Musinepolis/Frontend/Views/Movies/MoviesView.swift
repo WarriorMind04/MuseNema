@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct MoviesView: View {
-    var body: some View {
-        VStack{
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    //let colors: [Color] = [.red, .blue, .yellow, .green, .purple]
+
+        var body: some View {
+            VStack(spacing: 10){
+                Spacer()
+                ScreenTitle(title: "Películas")
+                CardsCarrusel()
+                
+            }
             
         }
-        
-            
-    }
 }
 
 #Preview {
