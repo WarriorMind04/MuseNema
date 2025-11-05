@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  GamesView.swift
 //  Musinepolis
 //
 //  Created by José Miguel Guerrero Jiménez on 05/11/25.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GamesView: View {
     var body: some View {
-        TabBarView()
+        Text("Hungry Shark Evolution!")
     }
 }
 
 #Preview {
-    ContentView()
+    GamesView()
 }

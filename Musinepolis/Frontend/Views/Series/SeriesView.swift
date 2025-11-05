@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SeriesView.swift
 //  Musinepolis
 //
 //  Created by José Miguel Guerrero Jiménez on 05/11/25.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SeriesView: View {
     var body: some View {
-        TabBarView()
+        Text("How I Met Your Mother")
     }
 }
 
 #Preview {
-    ContentView()
+    SeriesView()
 }
