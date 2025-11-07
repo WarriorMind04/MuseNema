@@ -8,30 +8,54 @@
 import SwiftUI
 
 struct CategoryView: View {
-    @Environment(ModelData.self) var modelData
-    var body: some View {
-        NavigationSplitView{
-            List {
-                modelData.features[0].image
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(height: 200)
-                                    .clipped()
-                                    .listRowInsets(EdgeInsets())
-                            ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-                                CategoryRow(categoryName: key, items: modelData.categories[key]!)
+    @Environment(ModelDataSoundtrack.self) var modelData
 
-                            }
-                            .listRowInsets(EdgeInsets())
+    var body: some View {
+        NavigationSplitView {
+            List {
+                // ✅ Imagen destacada (Featured)
+                if let featured = modelData.featuredMovies.first {
+                    AsyncImage(url: URL(string: featured.posterPath)) { phase in
+                        switch phase {
+                        case .empty:
+                            ProgressView()
+                                .frame(height: 200)
+                        case .success(let image):
+                            image
+                                .resizable()
+                                .scaledToFill()
+                                .frame(height: 200)
+                                .clipped()
+                        case .failure:
+                            Image(systemName: "film")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 200)
+                                .foregroundColor(.gray)
+                        @unknown default:
+                            EmptyView()
                         }
-                .navigationTitle("Movies")
+                    }
+                    .listRowInsets(EdgeInsets())
+                }
+
+                // ✅ Lista por categorías
+                ForEach(modelData.movieCategories.keys.sorted(), id: \.self) { key in
+                    if let items = modelData.movieCategories[key] {
+                        CategoryRowMovies(categoryName: key, items: items)
+                    }
+                }
+                .listRowInsets(EdgeInsets())
+            }
+            .navigationTitle("Movies")
         } detail: {
-            Text("Select a landmark")
+            Text("Select a movie")
         }
     }
 }
 
 #Preview {
     CategoryView()
-        .environment(ModelData())
+        .environment(ModelDataSoundtrack())
 }
+

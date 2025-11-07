@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "title": "Stranger Things",
+    "overview": "A group of kids uncover supernatural mysteries in their small town.",
+    "posterPath": "https://i.imgur.com/strangerThingsPoster.jpg",
+    "category": "Featured",
+    "albumId": 3
+  },
+  {
+    "id": 2,
+    "title": "The Last of Us",
+    "overview": "Joel and Ellie navigate a post-apocalyptic world ravaged by infection.",
+    "posterPath": "https://i.imgur.com/lastofusPoster.jpg",
+    "category": "Top Rated",
+    "albumId": 2
+  }
+]
+

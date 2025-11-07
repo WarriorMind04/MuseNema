@@ -9,13 +9,13 @@ import SwiftUI
 
 struct MoviesView: View {
     //let colors: [Color] = [.red, .blue, .yellow, .green, .purple]
-
+    //@Environment(ModelData.self) var modelData
         var body: some View {
             VStack(spacing: 10){
                 Spacer()
                 ScreenTitle(title: "Películas")
-                CardsCarrusel()
                 
+                CardsCarrusel()
             }
             
         }
@@ -23,4 +23,5 @@ struct MoviesView: View {
 
 #Preview {
     MoviesView()
+        //.environment(ModelData())
 }

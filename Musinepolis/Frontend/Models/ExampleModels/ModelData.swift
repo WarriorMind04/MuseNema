@@ -10,8 +10,8 @@ import Foundation
 
 @Observable
 class ModelData {
-    var landmarks: [Landmark] = load("landmarkData.json")
-    var hikes: [Hike] = load("hikeData.json")
+    var landmarks: [Landmark] = loadd("landmarkData.json")
+    var hikes: [Hike] = loadd("hikeData.json")
     var features: [Landmark] {
            landmarks.filter { $0.isFeatured }
        }
@@ -24,7 +24,7 @@ class ModelData {
         }
 }
 
-func load<T: Decodable>(_ filename: String) -> T {
+func loadd<T: Decodable>(_ filename: String) -> T {
     let data: Data
 
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
