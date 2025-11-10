@@ -9,9 +9,9 @@ import SwiftUI
 
 struct GamesView: View {
     var body: some View {
-        /*CategoryGamesView()
-            .environment(ModelDataSoundtrack())*/
-        TrackView()
+        CategoryGamesView()
+            .environment(ModelDataSoundtrack())
+        //TrackView()
     }
 }
 

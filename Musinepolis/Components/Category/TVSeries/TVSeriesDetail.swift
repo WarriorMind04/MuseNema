@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TVSeriesDetail: View {
     @Environment(ModelDataSoundtrack.self) var modelData
+    @StateObject private var viewModel = TracksViewModel()
     var serie: TVSerie
 
     var serieIndex: Int? {
@@ -57,12 +58,76 @@ struct TVSeriesDetail: View {
                     Text(serie.overview)
                         .font(.body)
                         .foregroundColor(.secondary)
+                    Divider()
+                        .padding(.vertical, 8)
+                    
+                    // 🎵 Lista de canciones
+                    if viewModel.isLoading {
+                        ProgressView("Cargando soundtrack…")
+                            .frame(maxWidth: .infinity)
+                    } else if viewModel.tracks.isEmpty {
+                        Text("No se encontraron canciones para esta película.")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    } else {
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text("Soundtrack")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .padding(.bottom, 5)
+                            
+                            ForEach(viewModel.tracks) { track in
+                                HStack(spacing: 10) {
+                                    // Imagen del álbum
+                                    if let imageUrl = track.album.images.first?.url,
+                                       let url = URL(string: imageUrl) {
+                                        AsyncImage(url: url) { image in
+                                            image
+                                                .resizable()
+                                                .aspectRatio(contentMode: .fill)
+                                                .frame(width: 60, height: 60)
+                                                .cornerRadius(8)
+                                        } placeholder: {
+                                            ProgressView()
+                                                .frame(width: 60, height: 60)
+                                        }
+                                    }
+
+                                    // Información del track
+                                    VStack(alignment: .leading, spacing: 4) {
+                                        Text(track.name)
+                                            .font(.headline)
+                                        Text(track.artists.map(\.name).joined(separator: ", "))
+                                            .font(.subheadline)
+                                            .foregroundColor(.secondary)
+                                    }
+
+                                    Spacer()
+
+                                    // Botón de preview (si existe)
+                                    if let preview = track.previewURL {
+                                        Button {
+                                            viewModel.playPreview(preview)
+                                        } label: {
+                                            Image(systemName: "play.circle.fill")
+                                                .font(.title2)
+                                                .foregroundColor(.green)
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                
                 }
                 .padding()
             }
         }
         .navigationTitle(serie.name)
         .navigationBarTitleDisplayMode(.inline)
+        .task {
+            await viewModel.loadDefaultTracks(for: serie.name)
+        }
     }
 }
 

@@ -38,6 +38,19 @@ class TracksViewModel: ObservableObject {
             player?.pause()
             player = nil
         }
+    func loadDefaultTracks(for movie: String) async {
+        isLoading = true
+        defer { isLoading = false }
+        
+        do {
+            // Usamos el nombre de la película como query predeterminado
+            let results = try await SpotifyAPI.shared.searchTracks(query: movie)
+            self.tracks = results
+        } catch {
+            print("Error cargando tracks predeterminados:", error)
+            self.tracks = []
+        }
+    }
     
 }
 

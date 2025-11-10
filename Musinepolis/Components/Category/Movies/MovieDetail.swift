@@ -10,6 +10,7 @@ import SwiftUI
 
 struct MovieDetail: View {
     @Environment(ModelDataSoundtrack.self) var modelData
+    @StateObject private var viewModel = TracksViewModel()
     var movie: Movie
 
     var movieIndex: Int? {
@@ -18,18 +19,17 @@ struct MovieDetail: View {
 
     var body: some View {
         ScrollView {
-            VStack {
-                // ✅ Usa AsyncImage directamente para cargar desde la URL
+            VStack(alignment: .leading, spacing: 16) {
+                
+                // 🎬 Imagen del póster
                 AsyncImage(url: URL(string: movie.posterPath)) { phase in
                     switch phase {
                     case .empty:
-                        ProgressView()
-                            .frame(height: 300)
+                        ProgressView().frame(height: 300)
                     case .success(let image):
                         image
                             .resizable()
                             .scaledToFit()
-                            .frame(maxWidth: .infinity)
                             .cornerRadius(12)
                             .shadow(radius: 8)
                     case .failure:
@@ -42,31 +42,88 @@ struct MovieDetail: View {
                         EmptyView()
                     }
                 }
-                .padding(.bottom, 10)
 
-                VStack(alignment: .leading, spacing: 12) {
+                // 📜 Información general
+                VStack(alignment: .leading, spacing: 8) {
                     Text(movie.title)
                         .font(.largeTitle)
                         .fontWeight(.bold)
-
-                    Divider()
-
-                    Text("About \(movie.title)")
-                        .font(.title2)
-                        .fontWeight(.semibold)
 
                     Text(movie.overview)
                         .font(.body)
                         .foregroundColor(.secondary)
                 }
-                .padding()
+
+                Divider()
+                    .padding(.vertical, 8)
+                
+                // 🎵 Lista de canciones
+                if viewModel.isLoading {
+                    ProgressView("Cargando soundtrack…")
+                        .frame(maxWidth: .infinity)
+                } else if viewModel.tracks.isEmpty {
+                    Text("No se encontraron canciones para esta película.")
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                } else {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("Soundtrack")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .padding(.bottom, 5)
+                        
+                        ForEach(viewModel.tracks) { track in
+                            HStack(spacing: 10) {
+                                // Imagen del álbum
+                                if let imageUrl = track.album.images.first?.url,
+                                   let url = URL(string: imageUrl) {
+                                    AsyncImage(url: url) { image in
+                                        image
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width: 60, height: 60)
+                                            .cornerRadius(8)
+                                    } placeholder: {
+                                        ProgressView()
+                                            .frame(width: 60, height: 60)
+                                    }
+                                }
+
+                                // Información del track
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text(track.name)
+                                        .font(.headline)
+                                    Text(track.artists.map(\.name).joined(separator: ", "))
+                                        .font(.subheadline)
+                                        .foregroundColor(.secondary)
+                                }
+
+                                Spacer()
+
+                                // Botón de preview (si existe)
+                                if let preview = track.previewURL {
+                                    Button {
+                                        viewModel.playPreview(preview)
+                                    } label: {
+                                        Image(systemName: "play.circle.fill")
+                                            .font(.title2)
+                                            .foregroundColor(.green)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
+            .padding()
         }
         .navigationTitle(movie.title)
         .navigationBarTitleDisplayMode(.inline)
+        .task {
+            await viewModel.loadDefaultTracks(for: movie.title)
+        }
     }
 }
-
 #Preview {
     let modelData = ModelDataSoundtrack()
     if let firstMovie = modelData.movies.first {
@@ -76,5 +133,3 @@ struct MovieDetail: View {
         Text("No movie data available")
     }
 }
-
-
