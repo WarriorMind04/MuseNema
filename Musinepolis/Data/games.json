@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "platform": "Nintendo Switch",
+    "releaseDate": "2017-03-03",
+    "overview": "Explore the vast world of Hyrule and defeat Calamity Ganon.",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/250px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
+    "category": "Top Games",
+    "albumId": 6
+  },
+  {
+    "id": 2,
+    "title": "God of War Ragnarök",
+    "platform": "PS5, Xbox Series X",
+    "releaseDate": "2022-11-09",
+    "overview": "Kratos and Atreus face their destiny as the world heads toward Ragnarök.",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg",
+    "category": "New Releases",
+    "albumId": 7
+  },
+  {
+    "id": 3,
+    "title": "Elden Ring",
+    "platform": "PS5, Xbox Series X, PC",
+    "releaseDate": "2022-02-25",
+    "overview": "Venture through the Lands Between and rise as the Elden Lord in this epic open-world RPG.",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BMWNlMDBiYzYtMWMyMC00Zjc5LTlhMjItMjRlMzBmYmVkOGM0XkEyXkFqcGc@._V1_QL75_UY281_CR4,0,190,281_.jpg",
+    "category": "Top Games",
+    "albumId": 6
+  },
+  {
+    "id": 4,
+    "title": "Hollow Knight",
+    "platform": "Nintendo Switch, PC, PS4, Xbox One",
+    "releaseDate": "2017-02-24",
+    "overview": "Descend into the ruined kingdom of Hallownest and uncover its hidden secrets in this atmospheric adventure.",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Hollow_Knight_first_cover_art.webp/250px-Hollow_Knight_first_cover_art.webp.png",
+    "category": "Featured Games",
+    "albumId": 8
+  },
+  {
+    "id": 5,
+    "title": "Cyberpunk 2077",
+    "platform": "PS5, Xbox Series X, PC",
+    "releaseDate": "2020-12-10",
+    "overview": "Step into the neon city of Night City as V, a mercenary with customizable cybernetic implants.",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg",
+    "category": "Featured Games",
+    "albumId": 9
+  },
+  {
+    "id": 6,
+    "title": "Red Dead Redemption 2",
+    "platform": "PS4, Xbox One, PC",
+    "releaseDate": "2018-10-26",
+    "overview": "Live the life of an outlaw in America’s unforgiving heartland at the dawn of the modern age.",
+    "posterPath": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
+    "category": "New Releases",
+    "albumId": 6
+  },
+  {
+    "id": 7,
+    "title": "Stardew Valley",
+    "platform": "Nintendo Switch, PC, PS4, Xbox One, Mobile",
+    "releaseDate": "2016-02-26",
+    "overview": "Build the farm of your dreams, grow crops, raise animals, and build relationships in this beloved indie sim.",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png",
+    "category": "Top Games",
+    "albumId": 8
+  },
+  {
+    "id": 8,
+    "title": "The Witcher 3: Wild Hunt",
+    "platform": "PS5, Nintendo Switch, Xbox Series X, PC",
+    "releaseDate": "2015-05-19",
+    "overview": "Play as Geralt of Rivia, a monster slayer for hire, as you search for your missing adopted daughter.",
+    "posterPath": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png",
+    "category": "New Releases",
+    "albumId": 6
+  },
+  {
+    "id": 9,
+    "title": "Super Mario Odyssey",
+    "platform": "Nintendo Switch",
+    "releaseDate": "2017-10-27",
+    "overview": "Join Mario on a globe-trotting adventure to rescue Princess Peach from Bowser’s wedding plans.",
+    "posterPath": "https://m.media-amazon.com/images/I/91-VfRp-i0L._AC_UF894,1000_QL80_.jpg",
+    "category": "Featured Games",
+    "albumId": 10
+  },
+  {
+    "id": 10,
+    "title": "Hades",
+    "platform": "Nintendo Switch, PC, PS5, Xbox Series X",
+    "releaseDate": "2020-09-17",
+    "overview": "Battle your way out of the Underworld as Zagreus, the immortal son of Hades, in this rogue-like masterpiece.",
+    "posterPath": "https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a0/Hades_Pack_Art.png/revision/latest?cb=20181213192439",
+    "category": "New Releases",
+    "albumId": 8
+  },
+  {
+    "id": 11,
+    "title": "Final Fantasy VII Remake",
+    "platform": "PS5, PC",
+    "releaseDate": "2020-04-10",
+    "overview": "Revisit the iconic city of Midgar in this reimagined version of the beloved RPG classic.",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/c/ce/FFVIIRemake.png",
+    "category": "New Releases",
+    "albumId": 9
+  },
+  {
+    "id": 12,
+    "title": "Spider-Man 2",
+    "platform": "PS5",
+    "releaseDate": "2023-10-20",
+    "overview": "Swing through New York City as Peter Parker and Miles Morales in this thrilling superhero adventure.",
+    "posterPath": "https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png",
+    "category": "Top Games",
+    "albumId": 7
+  }
+]
+

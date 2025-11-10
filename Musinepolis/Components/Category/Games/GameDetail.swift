@@ -1,25 +1,25 @@
 //
-//  TVSeriesDetail.swift
+//  GameDetail.swift
 //  Musinepolis
 //
-//  Created by José Miguel Guerrero Jiménez on 07/11/25.
+//  Created by José Miguel Guerrero Jiménez on 10/11/25.
 //
 
 import SwiftUI
 
-struct TVSeriesDetail: View {
+struct GameDetail: View {
     @Environment(ModelDataSoundtrack.self) var modelData
-    var serie: TVSerie
+    var game: Game
 
-    var serieIndex: Int? {
-        modelData.tvSeries.firstIndex(where: { $0.id == serie.id })
+    var gameIndex: Int? {
+        modelData.games.firstIndex(where: { $0.id == game.id })
     }
 
     var body: some View {
         ScrollView {
             VStack {
                 // ✅ Usa AsyncImage directamente para cargar desde la URL
-                AsyncImage(url: URL(string: serie.posterPath)) { phase in
+                AsyncImage(url: URL(string: game.posterPath)) { phase in
                     switch phase {
                     case .empty:
                         ProgressView()
@@ -44,32 +44,32 @@ struct TVSeriesDetail: View {
                 .padding(.bottom, 10)
 
                 VStack(alignment: .leading, spacing: 12) {
-                    Text(serie.name)
+                    Text(game.title)
                         .font(.largeTitle)
                         .fontWeight(.bold)
 
                     Divider()
 
-                    Text("About \(serie.name)")
+                    Text("About \(game.title)")
                         .font(.title2)
                         .fontWeight(.semibold)
 
-                    Text(serie.overview)
+                    Text(game.platform)
                         .font(.body)
                         .foregroundColor(.secondary)
                 }
                 .padding()
             }
         }
-        .navigationTitle(serie.name)
+        .navigationTitle(game.title)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
     let modelData = ModelDataSoundtrack()
-    if let firstSerie = modelData.tvSeries.first {
-        TVSeriesDetail(serie: firstSerie)
+    if let firstGame = modelData.games.first {
+        GameDetail(game: firstGame)
             .environment(modelData)
     } else {
         Text("No movie data available")

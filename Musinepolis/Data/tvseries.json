@@ -12,7 +12,7 @@
     "id": 2,
     "name": "The Last of Us",
     "firstAirDate": "2023-01-15",
-    "posterPath": "https://i.imgur.com/lastofusPoster.jpg",
+    "posterPath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqo0ALYiYI1NLgN3nvv6in_wRTidqRgPMupA&s",
     "overview": "Joel and Ellie navigate a post-apocalyptic world ravaged by infection.",
     "albumId": 2,
     "category": "Top Series"
@@ -21,7 +21,7 @@
     "id": 3,
     "name": "House of the Dragon",
     "firstAirDate": "2022-08-21",
-    "posterPath": "https://i.imgur.com/houseOfTheDragonPoster.jpg",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BM2QzMGVkNjUtN2Y4Yi00ODMwLTg3YzktYzUxYjJlNjFjNDY1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "overview": "Set 200 years before the events of Game of Thrones, this series tells the story of House Targaryen.",
     "albumId": 4,
     "category": "New Releases"
@@ -30,7 +30,7 @@
     "id": 4,
     "name": "The Mandalorian",
     "firstAirDate": "2019-11-12",
-    "posterPath": "https://i.imgur.com/mandalorianPoster.jpg",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BNWNmMGU0YjktZDZhYy00Y2E3LTk0ZjEtMmU0Y2YwOGJiODUzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "overview": "A lone bounty hunter travels through the outer reaches of the galaxy, far from the authority of the New Republic.",
     "albumId": 1,
     "category": "Featured Series"
