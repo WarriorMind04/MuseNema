@@ -17,6 +17,37 @@ struct GameDetail: View {
     }
 
     var body: some View {
+        ZStack{
+            AsyncImage(url: URL(string: game.posterPath)) { phase in
+                           switch phase {
+                           case .empty:
+                               Color.black.opacity(0.6) // fondo mientras carga
+                           case .success(let image):
+                               image
+                                   .resizable()
+                                   //.scaledToFill()
+                                   
+                                   .blur(radius: 20)
+                                   .overlay(
+                                       LinearGradient(
+                                           gradient: Gradient(colors: [
+                                               Color.black.opacity(0.1),
+                                               Color.black.opacity(0.2),
+                                               Color.clear
+                                           ]),
+                                           startPoint: .top,
+                                           endPoint: .bottom
+                                       )
+                                   )
+                                   .ignoresSafeArea()
+                           case .failure:
+                               Color.black.opacity(0.6)
+                           @unknown default:
+                               EmptyView()
+                           }
+                       }
+                       .ignoresSafeArea()
+        
         ScrollView {
             VStack {
                 // ✅ Usa AsyncImage directamente para cargar desde la URL
@@ -115,7 +146,7 @@ struct GameDetail: View {
                                         }
                                     }
                                 }
-                            }
+                            }}
                         }}
                 }
                 .padding()

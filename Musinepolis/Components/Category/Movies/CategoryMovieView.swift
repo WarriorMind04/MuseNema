@@ -16,29 +16,8 @@ struct CategoryMovieView: View {
             ScrollView {
                 
                 // ✅ Imagen destacada (Featured)
-                if let featured = modelData.featuredMovies.first {
-                    AsyncImage(url: URL(string: featured.posterPath)) { phase in
-                        switch phase {
-                        case .empty:
-                            ProgressView()
-                                .frame(height: 200)
-                        case .success(let image):
-                            image
-                                .resizable()
-                                .scaledToFill()
-                                .frame(height: 500)
-                                .clipped()
-                        case .failure:
-                            Image(systemName: "film")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 200)
-                                .foregroundColor(.gray)
-                        @unknown default:
-                            EmptyView()
-                        }
-                    }
-                    .listRowInsets(EdgeInsets())
+                CardCarrusel(items: ModelDataSoundtrack().movies) { movie in
+                    movie.posterPath
                 }
                 
 
