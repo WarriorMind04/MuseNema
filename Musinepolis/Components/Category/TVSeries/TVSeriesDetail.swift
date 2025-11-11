@@ -17,6 +17,7 @@ struct TVSeriesDetail: View {
     }
 
     var body: some View {
+    
         ScrollView {
             VStack {
                 // ✅ Usa AsyncImage directamente para cargar desde la URL

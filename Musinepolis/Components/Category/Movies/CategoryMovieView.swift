@@ -13,7 +13,7 @@ struct CategoryMovieView: View {
     var body: some View {
         
         NavigationSplitView {
-            List {
+            ScrollView {
                 
                 // ✅ Imagen destacada (Featured)
                 if let featured = modelData.featuredMovies.first {
