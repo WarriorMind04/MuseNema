@@ -16,9 +16,12 @@ struct CategoryGamesView: View {
             ScrollView {
                 
                 // ✅ Imagen destacada (Featured)
-                CardCarrusel(items: ModelDataSoundtrack().games) { game in
+                /*CardCarrusel(items: ModelDataSoundtrack().games) { game in
                     game.posterPath
-                }
+                }*/
+                CardsCarrusel(items: ModelDataSoundtrack().games) { game in
+                                   game.posterPath
+                               }
                 
 
                 // ✅ Lista por categorías

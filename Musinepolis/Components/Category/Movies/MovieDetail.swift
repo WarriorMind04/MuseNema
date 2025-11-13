@@ -12,6 +12,7 @@ struct MovieDetail: View {
     @Environment(ModelDataSoundtrack.self) var modelData
     @StateObject private var viewModel = TracksViewModel()
     var movie: Movie
+   
 
     var movieIndex: Int? {
         modelData.movies.firstIndex(where: { $0.id == movie.id })

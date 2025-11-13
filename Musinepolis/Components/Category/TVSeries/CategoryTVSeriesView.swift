@@ -16,9 +16,12 @@ struct CategoryTVSeriesView: View {
             ScrollView {
                 
                 // ✅ Imagen destacada (Featured)
-                CardCarrusel(items: ModelDataSoundtrack().tvSeries) { serie in
+                /*CardCarrusel(items: ModelDataSoundtrack().tvSeries) { serie in
                     serie.posterPath
-                }
+                }*/
+                CardsCarrusel(items: ModelDataSoundtrack().tvSeries) { serie in
+                                   serie.posterPath
+                               }
                 
 
                 // ✅ Lista por categorías

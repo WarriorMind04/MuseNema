@@ -9,16 +9,20 @@ import SwiftUI
 
 struct CategoryMovieView: View {
     @Environment(ModelDataSoundtrack.self) var modelData
-
+    @State private var isSearch = ""
     var body: some View {
         
         NavigationSplitView {
             ScrollView {
                 
                 // ✅ Imagen destacada (Featured)
-                CardCarrusel(items: ModelDataSoundtrack().movies) { movie in
+                /*CardCarrusel(items: ModelDataSoundtrack().movies) { movie in
                     movie.posterPath
-                }
+                }*/
+                CardsCarrusel(items: ModelDataSoundtrack().movies) { movie in
+                                   movie.posterPath
+                               }
+                               //.padding(.bottom, 30)
                 
 
                 // ✅ Lista por categorías
@@ -30,6 +34,7 @@ struct CategoryMovieView: View {
                 .listRowInsets(EdgeInsets())
             }
             .navigationTitle("Movies")
+            .searchable(text: $isSearch)
         } detail: {
             Text("Select a movie")
         }
@@ -40,4 +45,5 @@ struct CategoryMovieView: View {
     CategoryMovieView()
         .environment(ModelDataSoundtrack())
 }
+
 

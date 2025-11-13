@@ -38,7 +38,10 @@ struct TVSeriesItem: View {
             Text(serie.name)
                 .foregroundStyle(.primary)
                 .font(.caption)
-                .lineLimit(1)
+                .lineLimit(2)
+                
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: 120, alignment: .leading)
         }
         .padding(.leading, 15)
     }
