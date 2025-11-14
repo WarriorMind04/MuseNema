@@ -88,7 +88,7 @@ final class SpotifyAPI {
     }
     
     //Function in order to search for the albums rather tracks
-    func searchAlbum(query: String) async throws -> [Album] {
+    func searchAlbum(query: String) async throws -> [Albumm] {
         let token = try await fetchAccessToken()
         guard let encodedQuery = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
               let url = URL(string: "https://api.spotify.com/v1/search?q=\(encodedQuery)&type=album&limit=10") else {
@@ -96,7 +96,7 @@ final class SpotifyAPI {
         }
         
         struct SearchResponse: Codable { let albums: AlbumItems}
-        struct AlbumItems: Codable { let items: [Album]}
+        struct AlbumItems: Codable { let items: [Albumm]}
         let result: SearchResponse = try await NetworkManager.shared.performRequest(url, token: token)
         return result.albums.items
     }

@@ -15,6 +15,7 @@ struct Movie: Codable, Identifiable {
     let posterPath: String
     //var isFavorite: Bool
     let albumID: String
+    let soundtrackName: String?
     
     var category: Category
     enum Category: String, CaseIterable, Codable {

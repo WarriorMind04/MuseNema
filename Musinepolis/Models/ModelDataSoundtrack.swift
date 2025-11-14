@@ -42,46 +42,7 @@ class ModelDataSoundtrack {
         Dictionary(grouping: games, by: { $0.category.rawValue })
     }
     
-   /* var allMedia: [MediaItem] {
-        let movieItems = movies.map {
-            MediaItem(
-                id: UUID(),
-                title: $0.title,
-                type: .movie,
-                posterPath: $0.posterPath,
-                overview: $0.overview,
-                category: $0.category.rawValue
-            )
-        }
-        let seriesItems = tvSeries.map {
-            MediaItem(
-                id: UUID(),
-                title: $0.name,
-                type: .series,
-                posterPath: $0.posterPath,
-                overview: $0.overview,
-                category: $0.category.rawValue
-            )
-        }
-        let gameItems = games.map {
-            MediaItem(
-                id: UUID(),
-                title: $0.title,
-                type: .game,
-                posterPath: $0.posterPath,
-                overview: $0.platform, // Game has no overview; use platform or "" as a fallback
-                category: $0.category.rawValue
-            )
-        }
-        return movieItems + seriesItems + gameItems
-    }
-    func searchMedia(query: String) -> [MediaItem] {
-        guard !query.isEmpty else { return allMedia }
-        return allMedia.filter {
-            $0.title.localizedCaseInsensitiveContains(query) ||
-            $0.overview.localizedCaseInsensitiveContains(query)
-        }
-    }*/
+   
     
     
 }

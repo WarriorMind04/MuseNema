@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Album: Codable {
+struct Albumm: Codable {
     let name: String
     let images: [SpotifyImage]
 }
