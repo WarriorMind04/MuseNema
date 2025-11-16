@@ -1,0 +1,205 @@
+[
+  {
+    "title": "Interstellar",
+    "type": "movie",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "A team of explorers travel through a wormhole in space to save humanity.",
+    "category": "Top Movies",
+    "albumID": "3B61kSKTxlY36cYgzvf3cP",
+    "soundtrackName": "Interstellar Original Motion Picture Soundtrack"
+  },
+  {
+    "title": "Inception",
+    "type": "movie",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BZjhkNjM0ZTMtNGM5MC00ZTQ3LTk3YmYtZTkzYzdiNWE0ZTA2XkEyXkFqcGc@._V1_.jpg",
+    "overview": "A thief who enters dreams to steal secrets must perform the ultimate inception.",
+    "category": "Featured Movies",
+    "albumID": "380349905",
+    "soundtrackName": "Inception Original Motion Picture Soundtrack"
+  },
+  {
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "type": "movie",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BNDhlMzEyNzItMTA5Mi00YWRhLThlNTktYTQyMTA0MDIyNDEyXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Blacksmith Will Turner teams up with Captain Jack Sparrow to rescue his love from cursed pirates.",
+    "category": "Featured Movies",
+    "albumID": "4Qe057XqKloVNhnPohj6Yo",
+    "soundtrackName": "Pirates of the Caribbean: The Curse of the Black Pearl Original Soundtrack"
+  },
+  {
+    "title": "The Greatest Showman",
+    "type": "movie",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BMjI1NDYzNzY2Ml5BMl5BanBnXkFtZTgwODQwODczNTM@._V1_.jpg",
+    "overview": "P.T Barnum discovers the power of being yourself and the important things in life.",
+    "category": "Featured Movies",
+    "albumID": "7ayBZIe1FHkNv0T5xFCX6F",
+    "soundtrackName": "The Greatest Showman Original Motion Picture Soundtrack"
+  },
+  {
+    "title": "Gladiator",
+    "type": "movie",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/f/fb/Gladiator_%282000_film_poster%29.png",
+    "overview": "Maximus Decimus fights against the emperor Commodus in order to avenge his family.",
+    "category": "Top Movies",
+    "albumID": "0mN9E0N4bRBD7GKktlaRI0",
+    "soundtrackName": "Gladiator Soundtrack from the Motion Picture"
+  },
+  {
+    "title": "How to Train Your Dragon",
+    "type": "movie",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_.jpg",
+    "overview": "A young Viking named Hiccup befriends a dragon and changes the future of his tribe.",
+    "category": "Top Movies",
+    "albumID": "1440755584",
+    "soundtrackName": "How to Train Your Dragon (Original Motion Picture Soundtrack)"
+  },
+  
+  
+  {
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "type": "game",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/250px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
+    "overview": "Explore the vast world of Hyrule and defeat Calamity Ganon.",
+    "category": "Top Games",
+    "albumID": "74Ik8zFB49bkJs3Y7nYDkz",
+    "soundtrackName": "The Legend of Zelda: Breath of the Wild Original Soundtrack"
+  },
+  {
+    "title": "God of War Ragnarök",
+    "type": "game",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg",
+    "overview": "Kratos and Atreus face their destiny as the world heads toward Ragnarök.",
+    "category": "New Releases",
+    "albumID": "67Y8eZonuSwk82AphK4ki1",
+    "soundtrackName": "God of War Ragnarök (Original Soundtrack)"
+  },
+  {
+    "title": "Elden Ring",
+    "type": "game",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BMWNlMDBiYzYtMWMyMC00Zjc5LTlhMjItMjRlMzBmYmVkOGM0XkEyXkFqcGc@._V1_QL75_UY281_CR4,0,190,281_.jpg",
+    "overview": "Venture through the Lands Between and rise as the Elden Lord in this epic open-world RPG.",
+    "category": "Top Games",
+    "albumID": "3nUvKaoye6QEBiaPdlJhpK",
+    "soundtrackName": "Elden Ring (Original Soundtrack)"
+  },
+  {
+    "title": "Hollow Knight",
+    "type": "game",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Hollow_Knight_first_cover_art.webp/250px-Hollow_Knight_first_cover_art.webp.png",
+    "overview": "Descend into the ruined kingdom of Hallownest and uncover its hidden secrets in this atmospheric adventure.",
+    "category": "Featured Games",
+    "albumID": "1xW2iItcfvyw14ux01cbJs",
+    "soundtrackName": "Hollow Knight (Official Soundtrack)"
+  },
+  {
+    "title": "Cyberpunk 2077",
+    "type": "game",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg",
+    "overview": "Step into the neon city of Night City as V, a mercenary with customizable cybernetic implants.",
+    "category": "Featured Games",
+    "albumID": "1yIrXEQY7gxVDAHKP0WmVK",
+    "soundtrackName": "Cyberpunk 2077: Original Score"
+  },
+  {
+    "title": "Red Dead Redemption 2",
+    "type": "game",
+    "posterPath": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
+    "overview": "Live the life of an outlaw in America’s unforgiving heartland at the dawn of the modern age.",
+    "category": "New Releases",
+    "albumID": "7KpR6NrOEF5Fz8yjeF1a5j",
+    "soundtrackName": "Red Dead Redemption 2: Original Soundtrack"
+  },
+  {
+    "title": "Stardew Valley",
+    "type": "game",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png",
+    "overview": "Build the farm of your dreams, grow crops, raise animals, and build relationships in this indie sim.",
+    "category": "Top Games",
+    "albumID": "2UO7yBh1fHwwR6y5yrqSP0",
+    "soundtrackName": "Stardew Valley (Original Soundtrack)"
+  },
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "type": "game",
+    "posterPath": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png",
+    "overview": "Play as Geralt of Rivia, a monster slayer for hire, as you search for your missing adopted daughter.",
+    "category": "New Releases",
+    "albumID": "0W6BJ935qfGvxX0CNI24xd",
+    "soundtrackName": "The Witcher 3: Wild Hunt Original Game Soundtrack"
+  },
+  {
+    "title": "Super Mario Odyssey",
+    "type": "game",
+    "posterPath": "https://m.media-amazon.com/images/I/91-VfRp-i0L._AC_UF894,1000_QL80_.jpg",
+    "overview": "Join Mario on a globe-trotting adventure to rescue Princess Peach from Bowser’s wedding plans.",
+    "category": "Featured Games",
+    "albumID": "3jzYtdfGJ6Wi3vFG1s6XMi",
+    "soundtrackName": "Super Mario Odyssey Original Soundtrack"
+  },
+  {
+    "title": "Hades",
+    "type": "game",
+    "posterPath": "https://static.wikia.nocookie.net/hades_gamepedia_en/images/a/a0/Hades_Pack_Art.png",
+    "overview": "Battle your way out of the Underworld as Zagreus, the immortal son of Hades.",
+    "category": "New Releases",
+    "albumID": "61g15yyRstypOgZvBBLPgm",
+    "soundtrackName": "Hades: Original Soundtrack"
+  },
+  {
+    "title": "Final Fantasy VII Remake",
+    "type": "game",
+    "posterPath": "https://upload.wikimedia.org/wikipedia/en/c/ce/FFVIIRemake.png",
+    "overview": "Revisit the iconic city of Midgar in this reimagined version of the beloved RPG classic.",
+    "category": "New Releases",
+    "albumID": "1RCbZKPFgZHGbyKsz5KYt9",
+    "soundtrackName": "Final Fantasy VII Remake Original Soundtrack"
+  },
+  {
+    "title": "Spider-Man 2",
+    "type": "game",
+    "posterPath": "https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png",
+    "overview": "Swing through New York City as Peter Parker and Miles Morales in this thrilling superhero adventure.",
+    "category": "Top Games",
+    "albumID": "2ge8GWtqj9TGLX8M8jlV0N",
+    "soundtrackName": "Marvel's Spider-Man 2 (Original Video Game Soundtrack)"
+  },
+
+  
+
+  {
+    "title": "Stranger Things",
+    "type": "series",
+    "posterPath": "https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw==",
+    "overview": "A group of kids uncover supernatural mysteries in their small town.",
+    "category": "Featured Series",
+    "albumID": "69XhGLFj9vcr4FTyVI95J3",
+    "soundtrackName": "Stranger Things Official Playlist"
+  },
+  {
+    "title": "The Last of Us",
+    "type": "series",
+    "posterPath": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqo0ALYiYI1NLgN3nvv6in_wRTidqRgPMupA&s",
+    "overview": "Joel and Ellie navigate a post-apocalyptic world ravaged by infection.",
+    "category": "Top Series",
+    "albumID": "2WZGncC8oDyBFijXsxgaJK",
+    "soundtrackName": "The Last of Us Official Playlist"
+  },
+  {
+    "title": "House of the Dragon",
+    "type": "series",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BM2QzMGVkNjUtN2Y4Yi00ODMwLTg3YzktYzUxYjJlNjFjNDY1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Set 200 years before Game of Thrones, the story of House Targaryen.",
+    "category": "New Releases",
+    "albumID": "0xjX7lZpORrZNU76MM21in",
+    "soundtrackName": "House of the Dragon Official Playlist"
+  },
+  {
+    "title": "The Mandalorian",
+    "type": "series",
+    "posterPath": "https://m.media-amazon.com/images/M/MV5BNWNmMGU0YjktZDZhYy00Y2E3LTk0ZjEtMmU0Y2YwOGJiODUzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "A lone bounty hunter travels through the outer reaches of the galaxy.",
+    "category": "Featured Series",
+    "albumID": "6CSoIRLee2kGWkm2U5kLi0",
+    "soundtrackName": "The Mandalorian Official Playlist"
+  }
+]

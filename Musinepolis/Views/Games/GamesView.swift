@@ -9,9 +9,14 @@ import SwiftUI
 
 struct GamesView: View {
     var body: some View {
-        CategoryGamesView()
-            .environment(ModelDataSoundtrack())
-        //TrackView()
+        /*CategoryGamesView()
+            .environment(ModelDataSoundtrack())*/
+        CategoryMediaView(
+                    items: MDSoundtrack().games,
+                    categories: MDSoundtrack().gameCategories,
+                    title: "Games"
+                )
+                .environment(MDSoundtrack())
     }
 }
 

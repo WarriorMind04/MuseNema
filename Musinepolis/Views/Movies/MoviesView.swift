@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct MoviesView: View {
-    //let colors: [Color] = [.red, .blue, .yellow, .green, .purple]
-    //@Environment(ModelData.self) var modelData
+    
         var body: some View {
             
-                //ScreenTitle(title: "Películas")
+             
                 
-                //CardsCarrusel()
-                CategoryMovieView()
-                    .environment(ModelDataSoundtrack())
+                
+                /*CategoryMovieView()
+                    .environment(ModelDataSoundtrack())*/
+            //New component reusable and much more scalable
+            CategoryMediaView(
+                        items: MDSoundtrack().movies,
+                        categories: MDSoundtrack().movieCategories,
+                        title: "Movies"
+                    )
+                    .environment(MDSoundtrack())
             
             
         }
@@ -24,5 +30,5 @@ struct MoviesView: View {
 
 #Preview {
     MoviesView()
-        //.environment(ModelData())
+        
 }
