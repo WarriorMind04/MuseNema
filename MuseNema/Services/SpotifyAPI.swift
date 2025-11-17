@@ -14,28 +14,7 @@ final class SpotifyAPI {
     private var accessToken: String?
     private var tokenExpiration: Date?
     
-    // MARK: - Fetch Token from Backend
-    /*func fetchAccessToken() async throws -> String {
-        // Si ya tenemos token válido, lo devolvemos
-        if let token = accessToken, let expiration = tokenExpiration, expiration > Date() {
-            return token
-        }
-        
-        // Endpoint de tu backend deployeado
-        guard let url = URL(string: "https://back-mu-si-cnema-cihh8w4ld-jose-miguels-projects-4169b721.vercel.app/token") else {
-            throw URLError(.badURL)
-        }
-        
-        let (data, _) = try await URLSession.shared.data(from: url)
-        if let str = String(data: data, encoding: .utf8) {
-            print("🎯 Respuesta backend:", str)
-        }
-        let response = try JSONDecoder().decode(BackendTokenResponse.self, from: data)
-        
-        self.accessToken = response.access_token
-        self.tokenExpiration = Date().addingTimeInterval(TimeInterval(response.expires_in))
-        return response.access_token
-    }*/
+    
     func fetchAccessToken() async throws -> String {
         // Return cached token if valid
         if let token = accessToken,

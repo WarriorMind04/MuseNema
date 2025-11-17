@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		74232D522EBBB3C900AA87ED /* Musinepolis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musinepolis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74232D522EBBB3C900AA87ED /* MuseNema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseNema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		74232D542EBBB3C900AA87ED /* Musinepolis */ = {
+		74232D542EBBB3C900AA87ED /* MuseNema */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Musinepolis;
+			path = MuseNema;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		74232D492EBBB3C900AA87ED = {
 			isa = PBXGroup;
 			children = (
-				74232D542EBBB3C900AA87ED /* Musinepolis */,
+				74232D542EBBB3C900AA87ED /* MuseNema */,
 				74232D532EBBB3C900AA87ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		74232D532EBBB3C900AA87ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74232D522EBBB3C900AA87ED /* Musinepolis.app */,
+				74232D522EBBB3C900AA87ED /* MuseNema.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		74232D512EBBB3C900AA87ED /* Musinepolis */ = {
+		74232D512EBBB3C900AA87ED /* MuseNema */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74232D5D2EBBB3CA00AA87ED /* Build configuration list for PBXNativeTarget "Musinepolis" */;
+			buildConfigurationList = 74232D5D2EBBB3CA00AA87ED /* Build configuration list for PBXNativeTarget "MuseNema" */;
 			buildPhases = (
 				74232D4E2EBBB3C900AA87ED /* Sources */,
 				74232D4F2EBBB3C900AA87ED /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				74232D542EBBB3C900AA87ED /* Musinepolis */,
+				74232D542EBBB3C900AA87ED /* MuseNema */,
 			);
-			name = Musinepolis;
+			name = MuseNema;
 			packageProductDependencies = (
 			);
 			productName = Musinepolis;
-			productReference = 74232D522EBBB3C900AA87ED /* Musinepolis.app */;
+			productReference = 74232D522EBBB3C900AA87ED /* MuseNema.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 74232D4D2EBBB3C900AA87ED /* Build configuration list for PBXProject "Musinepolis" */;
+			buildConfigurationList = 74232D4D2EBBB3C900AA87ED /* Build configuration list for PBXProject "MuseNema" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74232D512EBBB3C900AA87ED /* Musinepolis */,
+				74232D512EBBB3C900AA87ED /* MuseNema */,
 			);
 		};
 /* End PBXProject section */
@@ -315,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74232D4D2EBBB3C900AA87ED /* Build configuration list for PBXProject "Musinepolis" */ = {
+		74232D4D2EBBB3C900AA87ED /* Build configuration list for PBXProject "MuseNema" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74232D5B2EBBB3CA00AA87ED /* Debug */,
@@ -324,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74232D5D2EBBB3CA00AA87ED /* Build configuration list for PBXNativeTarget "Musinepolis" */ = {
+		74232D5D2EBBB3CA00AA87ED /* Build configuration list for PBXNativeTarget "MuseNema" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74232D5E2EBBB3CA00AA87ED /* Debug */,

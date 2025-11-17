@@ -69,7 +69,7 @@ private func safeLoad<T: Decodable>(_ filename: String) -> T where T: Expressibl
 private func strictLoad<T: Decodable>(_ filename: String) throws -> T {
     let data: Data
     
-    let candidates: [Bundle] = [.main, Bundle(for: ModelDataSoundtrack.self)]
+    let candidates: [Bundle] = [.main, Bundle(for: MDSoundtrack.self)]
     guard let url = candidates.compactMap({ $0.url(forResource: filename, withExtension: nil) }).first else {
         throw NSError(domain: "ModelDataSoundtrack", code: 1,
                       userInfo: [NSLocalizedDescriptionKey: "Couldn't find \(filename)"])

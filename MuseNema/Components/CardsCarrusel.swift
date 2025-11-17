@@ -68,7 +68,7 @@ struct CardsCarrusel<Item: Identifiable>: View {
 }
 
 #Preview {
-    CardsCarrusel(items: ModelDataSoundtrack().movies) { movie in
+    CardsCarrusel(items: MDSoundtrack().movies) { movie in
         movie.posterPath
     }
 }

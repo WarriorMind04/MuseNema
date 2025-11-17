@@ -5,7 +5,7 @@
 //  Created by José Miguel Guerrero Jiménez on 07/11/25.
 //
 
-import Foundation
+/*import Foundation
 import Observation
 
 @Observable
@@ -84,4 +84,4 @@ private func strictLoad<T: Decodable>(_ filename: String) throws -> T {
     }
 }
 
-
+*/

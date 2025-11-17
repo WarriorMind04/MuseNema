@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct MusinepolisApp: App {
+struct MuseNemaApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

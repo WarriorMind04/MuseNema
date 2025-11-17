@@ -11,3 +11,4 @@ struct Albumm: Codable {
     let name: String
     let images: [SpotifyImage]
 }
+
