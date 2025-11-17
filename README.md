@@ -70,7 +70,11 @@ This keeps your API keys hidden from the client.
 AVPlayer is used to play preview audio clips smoothly.
 
 ---
+## 📥 Files
+Keynote Presentation: https://drive.google.com/file/d/1chGJDpyA47Nh8f6tPnNWRUM7gUyYbYZF/view?usp=sharing
+Sketch File: https://drive.google.com/file/d/1H2LSAEu-5OxIHsrR7pnOAW0IAJ7PRTp4/view?usp=sharing
 
+---
 ## 📥 Installation
 
 ### 1. Clone the repo
