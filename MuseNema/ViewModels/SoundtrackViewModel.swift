@@ -17,6 +17,10 @@ class SoundtrackViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var errorMessage: String?
     
+    //Playback state
+    @Published var currentlyPlayingID: String? = nil
+    @Published var isPlaying: Bool = false
+    
     private let musicService = MusicService()
     
     /// Busca soundtrack según el tipo de media
@@ -82,23 +86,57 @@ class SoundtrackViewModel: ObservableObject {
     // MARK: - Preview Playback
     
     func playPreview(track: AppleMusicTrack) {
-        guard let previewURL = musicService.previewURL(for: track) else {
-            print("⚠️ No hay preview disponible para este track")
-            return
-        }
-        PreviewPlayer.shared.playPreview(url: previewURL)
+        guard let url = musicService.previewURL(for: track) else { return }
+               
+               let id = track.id.rawValue
+               
+               if currentlyPlayingID == id {
+                   if isPlaying {
+                       PreviewPlayer.shared.pause()
+                       isPlaying = false
+                   } else {
+                       PreviewPlayer.shared.resume()
+                       isPlaying = true
+                   }
+                   return
+               }
+               
+               stopPreview()
+               
+               currentlyPlayingID = id
+               isPlaying = true
+               PreviewPlayer.shared.playPreview(url: url)
     }
     
     func playPreview(song: Song) {
-        guard let previewURL = musicService.previewURL(for: song) else {
-            print("⚠️ No hay preview disponible para esta canción")
+        guard let url = musicService.previewURL(for: song) else { return }
+        
+        let id = song.id.rawValue
+        
+        // Toggle same song
+        if currentlyPlayingID == id {
+            if isPlaying {
+                PreviewPlayer.shared.pause()
+                isPlaying = false
+            } else {
+                PreviewPlayer.shared.resume()
+                isPlaying = true
+            }
             return
         }
-        PreviewPlayer.shared.playPreview(url: previewURL)
+        
+        // New song
+        stopPreview()
+        
+        currentlyPlayingID = id
+        isPlaying = true
+        PreviewPlayer.shared.playPreview(url: url)
     }
     
     func stopPreview() {
         PreviewPlayer.shared.stop()
+        currentlyPlayingID = nil
+                isPlaying = false
     }
     
     // MARK: - Helper

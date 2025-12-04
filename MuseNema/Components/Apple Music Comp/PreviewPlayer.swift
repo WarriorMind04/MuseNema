@@ -16,8 +16,17 @@ class PreviewPlayer {
         player = AVPlayer(url: url)
         player?.play()
     }
+    
+    func pause() {
+        player?.pause()
+    }
+    
+    func resume() {
+        player?.play()
+    }
 
     func stop() {
         player?.pause()
+        player = nil
     }
 }
